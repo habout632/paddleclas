@@ -21,10 +21,12 @@ logger = logging.getLogger(__name__)
 
 args = {
     "batch_size": 1,
-    "model_file": "../../inference/afhq/infer.pdmodel",
-    "params_file": "../../inference/afhq/infer.pdparams",
+    # "model_file": "../../inference/afhq/infer.pdmodel",
+    # "params_file": "../../inference/afhq/infer.pdparams",
+    "model_file": "/app/inference/afhq/infer.pdmodel",
+    "params_file": "/app/inference/afhq/infer.pdparams",
     "use_gpu": True,
-    "use_tensorrt": False,
+    "use_tensorrt": True,
     "ir_optim": True,
     "gpu_mem": 8000,
     "enable_benchmark": False,
