@@ -318,3 +318,39 @@ Contributions are highly welcomed and we would really appreciate your feedback!!
 
 - Thank [nblib](https://github.com/nblib) to fix bug of RandErasing.
 - Thank [chenpy228](https://github.com/chenpy228) to fix some typos PaddleClas.
+
+~~~python
+py_infer.py
+-i=/data/datasets/AFHQ/test/dog/flickr_dog_000572.jpg
+-d=../../inference/afhq/
+-m=infer.pdmodel
+-p=infer.pdparams
+--use_gpu=True
+~~~
+
+
+~~~python
+
+infer.py
+--i=/data/datasets/AFHQ/test/dog/flickr_dog_000572.jpg
+--m=ResNet50_vd
+--p=../../output/ResNet50_vd/14/ppcls
+--use_gpu=True
+~~~
+
+
+~~~python
+predict.py
+-i=/data/datasets/AFHQ/test/wild/flickr_wild_000038.jpg
+-m=../../inference/afhq/infer.pdmodel
+-p=../../inference/afhq/infer.pdparams
+--use_gpu=1
+--use_tensorrt=False
+~~~
+
+~~~python
+export_model.py
+--m=ResNet50_vd
+--p=../output/ResNet50_vd/14/ppcls
+--o=../inference/afhq
+~~~
