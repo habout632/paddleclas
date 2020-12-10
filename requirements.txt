@@ -7,6 +7,7 @@ Flask==1.1.2
 Flask-Cors==3.0.9
 gast==0.3.3
 idna==2.10
+imutils==0.5.3
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
@@ -17,11 +18,13 @@ paddlepaddle-gpu==2.0.0rc0
 pathlib==1.0.1
 Pillow==8.0.1
 prettytable==2.0.0
-protobuf
+protobuf==3.14.0
+PyYAML==5.3.1
 rarfile==4.0
 requests==2.25.0
 scipy==1.5.4
 six==1.15.0
+tqdm==4.54.1
 urllib3==1.26.2
 wcwidth==0.2.5
 Werkzeug==1.0.1
