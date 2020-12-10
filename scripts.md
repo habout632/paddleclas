@@ -59,10 +59,15 @@ predict.py
 --use_tensorrt=False
 ~~~
 
+
 ~~~python
 export_model.py
 --m=ResNet50_vd
 --p=../output/ResNet50_vd/14/ppcls
 --o=../inference/afhq
 ~~~
+##### Note:
+m: architechture \
+**p: trained model dir with model files name as prefix** \
+o: inference model output dir
 
